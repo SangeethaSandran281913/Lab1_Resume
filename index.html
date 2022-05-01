@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sangeetha Sandran</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+    .checked {
+      color: rgb(233, 131, 233);
+    }
+
+    /* Style buttons */
+    .btn {
+      background-color: rgb(155, 2, 194);
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: rgb(218, 89, 218);
+    }
+
+    /* Footer */
+    .footer {
+      position: static;
+      left: 0;
+      bottom: 0;
+      height: 100px;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+
+    .footer a {
+      text-decoration: none;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: 420px;
+      /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-flat-wisteria w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"> </i></a>
+      <a href="#" onclick="window.location.reload(true)" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <a href="#profile" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Profile
+      </a>
+      <a href="#edu" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Education
+      </a>
+      <a href="#exp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Work Experience
+      </a>
+      <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Skills & Strengths
+      </a>
+      <a href="#curricular" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Extra-Curricular Activities
+      </a>
+
+      <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Projects
+      </a>
+
+      <a href="#honours" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Honours & Awards
+      </a>
+
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right">
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-flat-wisteria w3-hide w3-hide-large w3-hide-medium w3-top"
+    style="margin-top: 46px">
+    <a href="#profile" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Profile</a>
+
+    <a href="#edu" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Education</a>
+    <a href="#exp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Work Experience</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Skills & Strengths </a>
+    <a href="#curricular" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Extra-Curricular
+      Activities</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Projects</a>
+    <a href="#honours" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Honours & Awards</a>
+
+
+
+  </div>
+
+  <!-- Content -->
+  <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+
+    <!-- Banner -->
+    <header class="w3-display-container w3-center">
+      <img src="images/br.png" alt="banner" width="100%" />
+    </header>
+
+    <!-- PROFILE -->
+    <div class="w3-container w3-content w3-center w3-padding-64"
+      style="font-family:Times New Roman; font-size:150%; max-width: 800px" id="profile">
+
+      <h2 class="w3-light-grey w3-wide">PROFILE</h2>
+      <p class="w3-justify">
+        Extremely motivated to constantly grow professionally. I am confident
+        in my ability to come up with competitive innovative ideas and solutions
+      </p>
+      <table>
+        <tr>
+          <th>NAME</th>
+          <td>Sangeetha Sandran</td>
+        </tr>
+        <tr>
+          <th>NRIC</th>
+          <td>991021-02-5312</td>
+        </tr>
+        <tr>
+          <th>ADDRESS</th>
+          <td>No 214, Lorong 6, Taman Bandar Baru PKNK, 08000 Sungai Petani, Kedah</td>
+        </tr>
+        <tr>
+          <th>PHONE</th>
+          <td> +60 16 905 2425
+          </td>
+        </tr>
+        <tr>
+          <th>EMAIL</th>
+          <td>sangeethasandran99@gmail.com
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+
+    <!-- EDUCATION -->
+    <div class="w3-container w3-content w3-center w3-padding-64"
+      style="font-family:Times New Roman; font-size:150%; max-width: 800px" id="edu">
+
+      <h2 class=" w3-light-grey w3-wide">EDUCATION</h2><br>
+      <div class="timeline">
+
+        <div class="container left">
+          <div class="content">
+            <h3>SEPTEMBER 2020 - PRESENT</h3>
+            <p class="w3-opacity">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY WITH HONOURS</p>
+            <p>UNIVERSITI UTARA MALAYSIA</p>
+            <p class="w3-opacity">CGPA : 3.83 </p>
+          </div>
+        </div>
+
+        <div class="container right">
+          <div class="content">
+            <h3>JUNE 2017 - APRIL 2020</h3>
+            <p class="w3-opacity">DIPLOMA IN BUSINESS STUDIES (E-COMMERCE)</p>
+            <p>POLITEKNIK SULTAN HAJI AHMAD SHAH, KUANTAN, PAHANG</p>
+            <p class="w3-opacity">CGPA : 3.63 </p>
+          </div>
+        </div>
+
+        <div class="container left">
+          <div class="content">
+            <h3>2012 - 2016</h3>
+            <p class="w3-opacity">SIJIL PELAJARAN MALAYSIA</p>
+            <p>SEKOLAH MENENGAH KEBANGSAAN KHIR JOHARI</p>
+            <p class="w3-opacity">RESULT : 5A, 3B</p>
+          </div>
+        </div>
+
+        <div class="container right">
+          <div class="content">
+            <h3>JUNE 2017 - APRIL 2020</h3>
+            <p class="w3-opacity">UJIAN PENCAPAIAN SEKOLAH RENDAH</p>
+            <p>SJK(T) SARASWATHY </p>
+            <p class="w3-opacity">RESULT : 5A, 2B </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- WORK EXPERIENCE -->
+    <div class="w3-container w3-content w3-center w3-padding-64"
+      style="font-family:Times New Roman; font-size:150%; max-width: 800px" id="exp">
+      <h2 class="w3-light-grey w3-wide"> WORK EXPERIENCE </h2>
+      <br>
+      <h4>DECEMBER 2019 - AUGUST 2020</h4>
+      <h3>INTERN AT SPK TELECOMMUNICATION SDN. BHD.</h3>
+      <br>
+      <p style="text-align:left" class="w3-opacity"> Exposure gained : </p>
+      <div class="row">
+        <div class="column" style="background-color:#B98AEE;">
+          <h2 style="text-align:center">1</h2>
+          <p style="text-align:center">Manage to install, configuration, maintain and support customer on network
+            router, switches, firewall, wireless, voice and other network appliances related.</p>
+        </div>
+        <div class="column" style="background-color:#c6a2f0;">
+          <h2 style="text-align:center">2</h2>
+          <p style="text-align:center">Provide level-1/2 of troubleshooting of all network related incidents</p>
+        </div>
+        <div class="column" style="background-color:#B98AEE;">
+          <h2 style="text-align:center">3</h2>
+          <p style="text-align:center">Responsible for first level or second level escalation of any deployment issues
+            and problem.</p>
+        </div>
+        <div class="column" style="background-color:#c6a2f0;">
+          <h2 style="text-align:center">4</h2>
+          <p style="text-align:center">Update and maintain IT documentation, report status and escalate issues to
+            management.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SKILLS & STRENGTH -->
+    <div class="w3-container w3-content w3-center w3-padding-64"
+      style="font-family:Times New Roman; font-size:150%; max-width: 800px" id="skills">
+      <h2 class="w3-light-grey w3-wide">SKILLS & STRENGTH </h2>
+      <br>
+      <h2 class="w3-light-grey w3-opacity">LANGUAGE SKILLS </h2> <br>
+      <h3>MALAY</h3>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+
+      <h3>ENGLISH</h3>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+
+      <h3>TAMIL</h3>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br> <br>
+
+      <h2 class=" w3-light-grey w3-opacity">SOFTWARE SKILLS </h2> <br>
+      <h3>NetBeans</h3>
+      <progress value="90" max="100">20%</progress>
+      <h3>Adobe Photoshop</h3>
+      <progress value="85" max="100">70%</progress>
+      <h3>Flutter</h3>
+      <progress value="85" max="100">40%</progress>
+      <h3>SQL Server Management Studio</h3>
+      <progress value="80" max="100">60%</progress>
+      <h3>Adobe Illustrator</h3>
+      <progress value="70" max="100">80%</progress>
+      <br> <br>
+
+      <h2 class="w3-light-grey w3-opacity">STRENGTHS </h2>
+      <ul style="text-align:justify">
+        <li>Talented in communication Technology and Computer Management</li>
+        <li>Can work under pressure and meet tight deadlines </li>
+        <li>Good negotiator & strong closer</li>
+        <li>Manage time constraints and unpredictable schedules</li>
+        <li>Adaptability and flexibility</li>
+      </ul>
+    </div>
+
+    <!-- EXTRA-CURRICULAR ACTIVITIES -->
+    <div class="w3-container w3-content w3-center w3-padding-64"
+      style=" font-family:Times New Roman; font-size:150%; max-width: 800px" id="curricular">
+      <h2 class="w3-light-grey w3-wide"> EXTRA-CURRICULAR ACTIVITIES</h2> <br>
+      <ol style="text-align:justify">
+        <li>Served as Director for the Silambam Society University Utara Malaysia's Vaiyyathalamai Kol at National
+          Level.
+        <li>Served as Director for the Chess Club University Utara Malaysia's What's Your Next Move?.</li>
+        <li>Served as Vice Director for the Silambam Society University Utara Malaysia's Build Website Webinar. </li>
+        <li>Served as Vice Director for the Silambam Society University Utara Malaysia's Northern University Arts
+          Competition at National Level.</li>
+        </li>
+      </ol>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="w3-container w3-content w3-center w3-padding-64"
+      style="font-family:Times New Roman; font-size:150%; max-width: 800px" id="projects">
+      <h2 class="w3-light-grey w3-wide">PROJECTS </h2>
+      <br>
+      <p style="text-align:justify">&#9824; Prototype of Mobile Acupuncture Services Online System for International
+        Competition and Exhibition on Computing Innovation (iCE-CInno) 2019 </p>
+      <iframe width="500" height="345" src="https://www.youtube.com/embed/zecs31lrMVk">
+      </iframe>
+      <p style="text-align:justify">&#9824; Symler Cooks & Bake Mobile Application for STIW2044 Mobile Programming Final
+        Project</p>
+      <iframe width="500" height="345" src="https://www.youtube.com/embed/hNwd_Bn__Y4">
+      </iframe>
+    </div>
+
+    <!-- HONOURS & AWARDS -->
+    <div class=" w3-container w3-content w3-center w3-padding-64"
+      style="font-family:Times New Roman; font-size:150%; max-width: 800px" id="honours">
+
+      <h2 class=" w3-light-grey w3-wide"> HONOURS & AWARDS </h2>
+      <br>
+      <p>&#9824; Won a gold medal at the international level in the International Competition and Exhibition on
+        Computing Innovation (iCE-CInno) held by Universiti Malaysia Pahang</p>
+      <p>&#9824; Won a Malaysia Book of Records Certificate for Young Socialpreneur Programme 2.0 (YS2P)</p>
+      <p>&#9824; Debate Adjudicator for Polisas Debate Championship 2018</p>
+    </div>
+
+    <!-- Download PDF Feature -->
+    <div class=" w3-container w3-content w3-center w3-padding-64"
+      style="font-family:Times New Roman; font-size:150%; max-width: 800px">
+      <button class="btn"><a href="/resume/images/Resume.pdf" download></i> Download Resume</button>
+    </div>
+
+    <footer class="footer w3-center w3-flat-wisteria">
+      <br>
+      <a href="https://www.facebook.com/sagi.shana" class="fa fa-facebook fa-2x "></a>
+      <a href="https://twitter.com/sangeethaaa_" class="fa fa-twitter fa-2x"></a>
+      <a href="https://www.youtube.com/channel/UCL7pocnpWxmee7t5kHXUNaQ" class="fa fa-youtube fa-2x"></a>
+      <a href="https://www.instagram.com/sangeethaa__/?hl=en" class="fa fa-instagram fa-2x"></a>
+      <p class="w3-center">&#169; Sangeetha Sandran. 2022</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
